@@ -1,0 +1,6 @@
+<div id="container">
+    <h2>Available Plants</h2>
+    <ul data-bind="foreach: plants">
+        <li><a data-bind="attr: { href: $parent.url() + id  }, html:fullName"></a></li>
+    </ul>
+</div>

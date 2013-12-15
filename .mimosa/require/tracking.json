@@ -1,0 +1,102 @@
+{
+  "shims": {
+    "/javascripts/app/main.js": {
+      "bootstrap": {
+        "deps": [
+          "jquery"
+        ],
+        "exports": "jQuery"
+      },
+      "backbone": {
+        "deps": [
+          "underscore",
+          "jquery"
+        ],
+        "exports": "Backbone"
+      },
+      "underscore": {
+        "exports": "_"
+      }
+    }
+  },
+  "deps": {
+    "/javascripts/app/main.js": [
+      "durandal/app",
+      "durandal/viewLocator",
+      "durandal/system"
+    ],
+    "/javascripts/app/viewmodels/availablePlant.js": [
+      "backbone",
+      "durandal/app",
+      "knockout"
+    ],
+    "/javascripts/app/viewmodels/availablePlants.js": [
+      "backbone",
+      "durandal/app",
+      "knockout"
+    ],
+    "/javascripts/app/viewmodels/flickr.js": [
+      "plugins/http",
+      "durandal/app",
+      "knockout"
+    ],
+    "/javascripts/app/viewmodels/shell.js": [
+      "plugins/router",
+      "durandal/app"
+    ],
+    "/javascripts/app/viewmodels/welcome.js": []
+  },
+  "aliases": {
+    "/javascripts/app/main.js": {
+      "text": "../vendor/requirejs-text/text",
+      "knockout": "../vendor/knockout.js/knockout",
+      "jquery": "../vendor/jquery/jquery",
+      "bootstrap": "../vendor/bootstrap/bootstrap",
+      "durandal": "../vendor/durandal",
+      "plugins": "../vendor/durandal/plugins",
+      "transitions": "../vendor/durandal/transitions",
+      "backbone": "../vendor/backbone/backbone",
+      "underscore": "../vendor/underscore/underscore"
+    }
+  },
+  "mappings": {
+    "/javascripts/app/main.js": null
+  },
+  "packages": {
+    "/javascripts/app/main.js": null
+  },
+  "originalConfig": {
+    "shim": {
+      "bootstrap": {
+        "deps": [
+          "jquery"
+        ],
+        "exports": "jQuery"
+      },
+      "backbone": {
+        "deps": [
+          "underscore",
+          "jquery"
+        ],
+        "exports": "Backbone"
+      },
+      "underscore": {
+        "exports": "_"
+      }
+    },
+    "paths": {
+      "text": "../vendor/requirejs-text/text",
+      "knockout": "../vendor/knockout.js/knockout",
+      "jquery": "../vendor/jquery/jquery",
+      "bootstrap": "../vendor/bootstrap/bootstrap",
+      "durandal": "../vendor/durandal",
+      "plugins": "../vendor/durandal/plugins",
+      "transitions": "../vendor/durandal/transitions",
+      "backbone": "../vendor/backbone/backbone",
+      "underscore": "../vendor/underscore/underscore"
+    }
+  },
+  "requireFiles": [
+    "/javascripts/app/main.js"
+  ]
+}
