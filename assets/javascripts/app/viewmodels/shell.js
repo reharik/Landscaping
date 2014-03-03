@@ -1,4 +1,4 @@
-﻿define(['plugins/router', 'durandal/app'], function (router, app) {
+define(['plugins/router', 'durandal/app'], function (router, app) {
     return {
         router: router,
         search: function() {
@@ -9,11 +9,10 @@
         activate: function () {
             router.map([
                 { route: '', title:'Welcome', moduleId: 'viewmodels/welcome', nav: true },
-                { route: 'available-plants', moduleId: 'viewmodels/availablePlants', title: 'Available Plants', nav: true },
-                { route: 'plants-in-my-yard', moduleId: 'viewmodels/selectedPlants', title:'Plants in my yard', nav: true },
-                { route: 'available-plant(/:id)', moduleId: 'viewmodels/availablePlant', title:'Available Plant'}
-
+                { route: 'availablePlants', title:'Available Plants', moduleId: 'viewmodels/availablePlants', nav: true },
+                { route: 'availablePlant/:id', title:'Available Plant', moduleId: 'viewmodels/availablePlant'}
             ]).buildNavigationModel();
+
             return router.activate();
         }
     };
